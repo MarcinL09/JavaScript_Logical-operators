@@ -16,3 +16,11 @@ let teenage = isTeenageAge(10); // false
 teenage = isTeenageAge(15); // true
 teenage = isTeenageAge(20); // false
 console.log(teenage);
+
+// Write the isNotNull function
+function isNotNull(value) {
+    return value !== null;
+}
+let isNull = isNotNull(null); // false
+isNull = isNotNull(true); // true
+console.log(isNull);
