@@ -40,3 +40,16 @@ function canCarGoRight(
 }
 const carGoRight = canCarGoRight(false, true, true)
 console.log(carGoRight);
+
+// Write a function named setAlarm which receives two parameters. The first parameter, employed,
+// is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
+function setClockAlarm(workDay, dayOff){
+   return workDay && dayOff;
+}
+
+let alarm = setAlarm(true, true);
+alarm = setAlarm(false, true);
+alarm = setAlarm(true, false);
+alarm = setAlarm(false, false);
+console.log(alarm);
+
