@@ -24,3 +24,9 @@ function isNotNull(value) {
 let isNull = isNotNull(null); // false
 isNull = isNotNull(true); // true
 console.log(isNull);
+
+// Use the round brackets () to change the true || false && false statement to return false.
+function changeTheStatement() {
+    return (true || false) && false;
+}
+console.log(changeTheStatement())
