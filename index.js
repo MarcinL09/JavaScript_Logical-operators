@@ -30,3 +30,13 @@ function changeTheStatement() {
     return (true || false) && false;
 }
 console.log(changeTheStatement())
+
+// write the canCarGoRight function.
+function canCarGoRight(
+    isMainLightGreen,
+    isTheConditionalRightTurnLightOn,
+    didTheCarStop) {
+    return isMainLightGreen || (isTheConditionalRightTurnLightOn && didTheCarStop);
+}
+const carGoRight = canCarGoRight(false, true, true)
+console.log(carGoRight);
