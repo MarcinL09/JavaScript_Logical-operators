@@ -69,7 +69,23 @@ function isInRange(a, b, range){
     }
 }
 
-const inRange = closeCompare(3,5,3);
-const inRangetwo = closeCompare(3,5,0);
+const inRange = isInRange(3,5,3);
+const inRangetwo = isInRange(3,5,0);
 console.log(inRange);
 console.log(inRangetwo);
+
+// Boolean logic from scratch
+
+// or(true, false) || (false, true) || (true, true) should return true
+// or(false, false) should return false
+const or = (a, b) => {
+    return !(!a && !b);
+}
+console.log(or(true, true));
+// xor(true, true) || (false, false) should return false
+// xor(false, true) || (true, false) should return true
+const xor = (a, b) => {
+  return !(!a && !b) && !(a && b);
+}
+
+console.log(xor(false, true));
