@@ -47,9 +47,29 @@ function setClockAlarm(workDay, dayOff){
    return workDay && dayOff;
 }
 
-let alarm = setAlarm(true, true);
-alarm = setAlarm(false, true);
-alarm = setAlarm(true, false);
-alarm = setAlarm(false, false);
+let alarm = setClockAlarm(true, true);
+alarm = setClockAlarm(false, true);
+alarm = setClockAlarm(true, false);
+alarm = setClockAlarm(false, false);
 console.log(alarm);
 
+// Create a function close_compare that accepts 3 parameters: a, b, and an optional margin.
+// The function should return whether a is lower than, close to, or higher than b.
+// a is considered "close to" b if margin is greater than or equal to the distance between a and b.
+
+function isInRange(a, b, range){
+    if (!range) {
+        if (a < b) return -1;
+        if (a > b) return 1;
+        if (a === b) return 0;
+    } else {
+        if (Math.abs(a - b) <= range || a ===b) return 0;
+        if (a < b) return -1;
+        if (a > b) return 1;
+    }
+}
+
+const inRange = closeCompare(3,5,3);
+const inRangetwo = closeCompare(3,5,0);
+console.log(inRange);
+console.log(inRangetwo);
