@@ -114,4 +114,19 @@ function rentalCarCost(d) {
 }
 
 const cost = rentalCarCost(2);
-console.log(cost)
+console.log(cost);
+
+// Write a function that given a floor in the american system returns the floor in the european system.
+
+function getRealFloor(n) {
+    if (n >= 0 && n <= 1) {
+        return 0;
+    } else if (n > 1 && n < 13) {
+        return n - 1;
+    } else if ( n > 13) {
+        return n - 2;
+    }
+    return n;
+}
+const realFloor = getRealFloor(5);
+console.log(realFloor);
