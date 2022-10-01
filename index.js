@@ -130,3 +130,45 @@ function getRealFloor(n) {
 }
 const realFloor = getRealFloor(5);
 console.log(realFloor);
+
+// an extended version of the famous rock-paper-scissors game.
+
+function rockPaperScissorsLizardSpockGame(playerOne, playerTwo) {
+    if (playerOne === 'Scissors' && playerTwo === 'Paper' ||
+        playerOne === 'Scissors' && playerTwo === 'Lizard' ||
+        playerOne === 'Paper' && playerTwo === 'Rock' ||
+        playerOne === 'Paper' && playerTwo === 'Spock' ||
+        playerOne === 'Rock' && playerTwo === 'Lizard' ||
+        playerOne === 'Rock' && playerTwo === 'Scissors' ||
+        playerOne === 'Lizard' && playerTwo === 'Spock' ||
+        playerOne === 'Lizard' && playerTwo === 'Paper' ||
+        playerOne === 'Spock' && playerTwo === 'Scissors' ||
+        playerOne === 'Spock' && playerTwo === 'Rock') {
+            return 'Player One Won!';
+    } else if (playerOne === 'Paper' && playerTwo === 'Scissors' ||
+        playerOne === 'Rock' && playerTwo === 'Paper'||
+        playerOne === 'Lizard' && playerTwo === 'Rock'||
+        playerOne === 'Spock' && playerTwo === 'Lizard'  ||
+        playerOne === 'Scissors' && playerTwo === 'Spock' ||
+        playerOne === 'Lizard' && playerTwo === 'Scissors' ||
+        playerOne === 'Paper' && playerTwo === 'Lizard' ||
+        playerOne === 'Spock' && playerTwo === 'Paper'  ||
+        playerOne === 'Rock' && playerTwo === 'Spock'  ||
+        playerOne === 'Scissors'&& playerTwo === 'Rock') {
+        return 'Player Two Won!'
+    }
+    return 'Draw!'
+}
+const game = rockPaperScissorsLizardSpockGame('Paper', 'Rock');
+console.log(game);
+
+// Scissors cuts Paper
+// Paper covers Rock
+// Rock crushes Lizard
+// Lizard poisons Spock
+// Spock smashes Scissors
+// Scissors decapitates Lizard
+// Lizard eats Paper
+// Paper disproves Spock
+// Spock vaporizes Rock
+// Rock crushes Scissors
