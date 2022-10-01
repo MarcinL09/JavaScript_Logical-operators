@@ -98,7 +98,7 @@ function _if(bool, func1, func2) {
     if (bool === true) {
         return func1(console.log("True"));
     }
-        return func2(console.log("false"));
+    return func2(console.log("false"));
 }
 
 // Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total.
@@ -155,7 +155,7 @@ function rockPaperScissorsLizardSpockGame(playerOne, playerTwo) {
         (playerOne === 'Spock' && playerTwo === 'Paper') ||
         (playerOne === 'Rock' && playerTwo === 'Spock')  ||
         (playerOne === 'Scissors'&& playerTwo === 'Rock')) {
-        return 'Player Two Won!'
+            return 'Player Two Won!'
     }
     return 'Draw!'
 }
