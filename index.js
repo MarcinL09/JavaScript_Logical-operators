@@ -44,14 +44,14 @@ console.log(carGoRight);
 
 // Write a function named setAlarm which receives two parameters. The first parameter, employed,
 // is true whenever you are employed and the second parameter, vacation is true whenever you are on vacation.
-function setClockAlarm(workDay, dayOff){
-   return workDay && dayOff;
+function isTheClockAlarmSet(isWorkDay, isDayOff){
+   return isWorkDay && isDayOff;
 }
 
-let alarm = setClockAlarm(true, true);
-alarm = setClockAlarm(false, true);
-alarm = setClockAlarm(true, false);
-alarm = setClockAlarm(false, false);
+let alarm = isTheClockAlarmSet(true, true);
+alarm = isTheClockAlarmSet(false, true);
+alarm = isTheClockAlarmSet(true, false);
+alarm = isTheClockAlarmSet(false, false);
 console.log(alarm);
 
 // Create a function close_compare that accepts 3 parameters: a, b, and an optional margin.
