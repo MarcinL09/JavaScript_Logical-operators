@@ -115,11 +115,11 @@ console.log(xor(false, true));
 // and 2 functions (which do not take any parameters): func1 and func2
 // When bool is truth-ish, func1 should be called, otherwise call the func2.
 
-function _if(bool, func1, func2) {
-    if (bool === true) {
-        return func1(console.log("True"));
+function _if(boolean, functionFirst, functionSecond) {
+    if (boolean === true) {
+        return functionFirst(console.log("True"));
     }
-    return func2(console.log("false"));
+    return functionSecond(console.log("false"));
 }
 
 // Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total.
