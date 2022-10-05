@@ -58,15 +58,27 @@ console.log(alarm);
 // The function should return whether a is lower than, close to, or higher than b.
 // a is considered "close to" b if margin is greater than or equal to the distance between a and b.
 
-function isInRange(a, b, range){
+function isInRange(a, b, range) {
     if (!range) {
-        if (a < b) return -1;
-        if (a > b) return 1;
-        if (a === b) return 0;
+        if (a < b) {
+            return -1;
+        }
+        if (a > b) {
+            return 1;
+        }
+        if (a === b) {
+            return 0;
+        }
     } else {
-        if (Math.abs(a - b) <= range || a === b) return 0;
-        if (a < b) return -1;
-        if (a > b) return 1;
+        if (Math.abs(a - b) <= range || a === b) {
+            return 0;
+        }
+        if (a < b) {
+            return -1;
+        }
+        if (a > b) {
+            return 1;
+        }
     }
 }
 
