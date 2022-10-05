@@ -9,7 +9,7 @@ console.log(getName());
 // Write the isTeenageAge function.
 
 function isTeenageAge(age) {
-    return  age >= 13 && age < 20;
+    return age >= 13 && age < 20;
 }
 
 let teenage = isTeenageAge(10); // false
@@ -63,7 +63,7 @@ function isInRange(a, b, range){
         if (a > b) return 1;
         if (a === b) return 0;
     } else {
-        if (Math.abs(a - b) <= range || a ===b) return 0;
+        if (Math.abs(a - b) <= range || a === b) return 0;
         if (a < b) return -1;
         if (a > b) return 1;
     }
