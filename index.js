@@ -35,7 +35,8 @@ console.log(changeTheStatement())
 function canCarGoRight(
     isMainLightGreen,
     isTheConditionalRightTurnLightOn,
-    didTheCarStop) {
+    didTheCarStop
+) {
     return isMainLightGreen || (isTheConditionalRightTurnLightOn && didTheCarStop);
 }
 const carGoRight = canCarGoRight(false, true, true)
