@@ -142,15 +142,13 @@ console.log(cost);
 
 // Write a function that given a floor in the american system returns the floor in the european system.
 
-function getRealFloor(n) {
-    if (n >= 0 && n <= 1) {
-        return 0;
-    } else if (n > 1 && n < 13) {
-        return n - 1;
-    } else if ( n > 13) {
-        return n - 2;
+function getRealFloor(americanFloorNumber) {
+    if (americanFloorNumber <= 0) {
+        return americanFloorNumber;
+    } if (americanFloorNumber >= 13) {
+        return americanFloorNumber - 2;
     }
-    return n;
+    return americanFloorNumber - 1;
 }
 const realFloor = getRealFloor(5);
 console.log(realFloor);
