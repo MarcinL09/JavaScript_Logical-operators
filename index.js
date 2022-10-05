@@ -91,14 +91,22 @@ console.log(inRangetwo);
 
 // or(true, false) || (false, true) || (true, true) should return true
 // or(false, false) should return false
-const or = (a, b) => {
-    return !(!a && !b);
+function or(a, b) {
+    if (!a && !b) {
+        return false;
+    }
+    return true;
 }
 console.log(or(true, true));
 // xor(true, true) || (false, false) should return false
 // xor(false, true) || (true, false) should return true
-const xor = (a, b) => {
-  return !(!a && !b) && !(a && b);
+function xor(a, b) {
+    if (!a && !b) {
+        return false;
+    } else if (a && b) {
+        return false;
+    }
+    return true;
 }
 
 console.log(xor(false, true));
