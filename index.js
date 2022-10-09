@@ -103,7 +103,7 @@ console.log(or(true, true));
 function xor(a, b) {
     if (!a && !b) {
         return false;
-    } else if (a && b) {
+    } if (a && b) {
         return false;
     }
     return true;
@@ -174,29 +174,19 @@ function willSpockWin(opponent) {
 function rockPaperScissorsLizardSpockGame(playerOne, playerTwo) {
     if (playerOne === playerTwo) {
         return 'Draw!';
-    } if (playerOne === 'rock' && willRockWin(playerTwo)) {
-        return 'Player One won!'
+    }
+    if (playerOne === 'rock' && willRockWin(playerTwo)) {
+        return 'Player One won!';
     } if (playerOne === 'scissors' && willScissorsWin(playerTwo)) {
-        return 'Player One won!'
+        return 'Player One won!';
     } if (playerOne === 'paper' && willPaperWin(playerTwo)) {
-        return 'Player One won!'
+        return 'Player One won!';
     } if (playerOne === 'lizard' && willLizardWin(playerTwo)) {
-        return 'Player One won!'
+        return 'Player One won!';
     } if (playerOne === 'spock' && willSpockWin(playerTwo)) {
-        return 'Player One won!'
+        return 'Player One won!';
     }
     return 'Player Two Won!'
 }
 const game = rockPaperScissorsLizardSpockGame('paper', 'scissors');
 console.log(game);
-
-
-
-
-
-
-
-
-
-
-
